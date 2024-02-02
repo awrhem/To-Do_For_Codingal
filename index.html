@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codingal To-Do</title>
+    <link rel="icon" href="/Icon/to-do-list.png">
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Unicons CSS for remove task button-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+  </head>
+
+  <body>
+    <!-- For clock -->
+    <div class="datetime">
+      <div class="time"></div>
+      <div class="date"></div>
+    </div>
+
+    <!-- For To-Do list -->
+    <div class="container">
+      <div class="input-field">
+        <textarea placeholder="Enter tasks to add"></textarea>
+        <!-- <i class="uil uil-notes note-icon"></i> -->
+        <button class="add-button">Add Task</button>
+      </div>
+      <!-- list -->
+      <ul class="todoLists"></ul>
+      <!-- Displaying the pending tasks -->
+      <div class="pending-tasks">
+        <span>You have <span class="pending-num"> no </span> tasks pending.</span>
+        <button class="clear-button">Clear All</button>
+      </div>
+    </div>
+
+    <!-- Linking JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
